@@ -39,9 +39,9 @@ export function Hero() {
         <div className="max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-balance">
-              Hi, I'm <span className="gradient-text">Yes</span>
+              Hi, I'm <span className="gradient-text">Abdulwedud Yassin</span>
               <br />
-              <span className="text-4xl sm:text-5xl lg:text-6xl">a Full Stack Developer</span>
+              <span className="text-4xl sm:text-5xl lg:text-6xl">a Full Stack Web Developer</span>
             </h1>
           </motion.div>
 
@@ -102,14 +102,6 @@ export function Hero() {
           </motion.div>
         </div>
       </div>
-
-      <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-      >
-        <ArrowDown className="h-6 w-6 text-muted-foreground" />
-      </motion.div>
     </section>
   )
 }
