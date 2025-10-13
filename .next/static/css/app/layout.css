@@ -3932,6 +3932,11 @@ font-weight: 100 900;
       bottom: calc(var(--spacing) * 0);
     }
   }
+  .sm\:mb-8 {
+    @media (width >= 40rem) {
+      margin-bottom: calc(var(--spacing) * 8);
+    }
+  }
   .sm\:block {
     @media (width >= 40rem) {
       display: block;

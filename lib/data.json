@@ -23,7 +23,7 @@
       },
       {
         "title": "Passion",
-        "description": "Creating delightful user experiences"
+        "description": "Creating delightful user experiences and building scalable and performant solutions that solve real-world problems"
       }
     ]
   },
@@ -34,52 +34,46 @@
   },
   "projects": [
     {
-      "title": "E-Commerce Platform",
-      "description": "A full-featured e-commerce platform with payment integration, admin dashboard, and real-time inventory management.",
-      "tags": ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-      "github": "https://github.com",
-      "demo": "https://demo.com"
+      "title": "E-Commerce Landing Page",
+      "description": "A full-featured e-commerce landing page with a modern design and smooth animations.",
+      "tags": ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+      "github": "https://github.com/abdulwedud33/nike-landing-page",
+      "demo": "https://nike-landing-page-ashy-five.vercel.app/"
     },
     {
-      "title": "Task Management App",
-      "description": "Collaborative task management application with real-time updates, team workspaces, and advanced filtering.",
-      "tags": ["React", "Node.js", "Socket.io", "MongoDB"],
-      "github": "https://github.com",
-      "demo": "https://demo.com"
+      "title": "Task Management App with google authentication",
+      "description": "Collaborative task management application with real-time updates and advanced filtering with google authentication.",
+      "tags": ["React", "Node.js", "Tailwind", "PostgreSQL"],
+      "github": "https://github.com/abdulwedud33/Advanced-todo",
+      "demo": "https://advanced-todo-sable.vercel.app"
     },
     {
-      "title": "AI Content Generator",
-      "description": "AI-powered content generation tool using OpenAI API with custom templates and export functionality.",
-      "tags": ["Next.js", "OpenAI", "Tailwind", "Prisma"],
-      "github": "https://github.com",
-      "demo": "https://demo.com"
+      "title": "Weather App",
+      "description": "A weather app with a modern design and smooth animations.",
+      "tags": ["Next.js", "React", "TypeScript", "Tailwind", "Weather API"],
+      "github": "https://github.com/abdulwedud33/weather-app",
+      "demo": "https://weather-app-cyan-ten-40.vercel.app"
     },
     {
-      "title": "Social Media Dashboard",
-      "description": "Analytics dashboard for social media management with data visualization and scheduling features.",
-      "tags": ["React", "D3.js", "Express", "Redis"],
-      "github": "https://github.com",
-      "demo": "https://demo.com"
+      "title": "Intern Finder App",
+      "description": "A platform for students to find internships and for companies to find interns.",
+      "tags": ["React", "TypeScript", "Tailwind", "shadcn-ui", "Node.js", "Express", "MongoDB"],
+      "github": "https://github.com/abdulwedud33/intern-finder-v2",
+      "demo": "https://intern-finder-alpha.vercel.app"
     }
   ],
   "experience": [
     {
-      "company": "Tech Innovations Inc.",
-      "role": "Senior Full Stack Developer",
-      "period": "2022 - Present",
-      "description": "Leading development of enterprise web applications using Next.js and Node.js. Mentoring junior developers and implementing best practices."
+      "company": "Impact Makers Foundation",
+      "role": "Full Stack Web Developer",
+      "period": "3 months",
+      "description": "Built a platform for students to find internships and for companies to find interns."
     },
     {
-      "company": "Digital Solutions Co.",
-      "role": "Full Stack Developer",
-      "period": "2020 - 2022",
-      "description": "Built and maintained multiple client projects using React and Express. Improved application performance by 40% through optimization."
-    },
-    {
-      "company": "StartUp Labs",
-      "role": "Frontend Developer",
-      "period": "2019 - 2020",
-      "description": "Developed responsive web applications and collaborated with designers to create pixel-perfect implementations."
+      "company": "Adama Science and Technology University",
+      "role": "Student",
+      "period": "2023 - Present",
+      "description": "Studying Computer Science and Engineering at Adama Science and Technology University."
     }
   ]
 }

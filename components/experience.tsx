@@ -8,26 +8,19 @@ import { useRef } from "react"
 
 const experiences = [
   {
-    company: "Tech Innovations Inc.",
-    role: "Senior Full Stack Developer",
-    period: "2022 - Present",
+    company: "Impact Makers Foundation",
+    role: "Full Stack Web Developer",
+    period: "3 months",
     description:
-      "Leading development of enterprise web applications using Next.js and Node.js. Mentoring junior developers and implementing best practices.",
+      "Built a platform for students to find internships and for companies to find interns.",
   },
   {
-    company: "Digital Solutions Co.",
-    role: "Full Stack Developer",
-    period: "2020 - 2022",
+    company: "Adama Science and Technology University",
+    role: "Student",
+    period: "2023 - Present",
     description:
-      "Built and maintained multiple client projects using React and Express. Improved application performance by 40% through optimization.",
-  },
-  {
-    company: "StartUp Labs",
-    role: "Frontend Developer",
-    period: "2019 - 2020",
-    description:
-      "Developed responsive web applications and collaborated with designers to create pixel-perfect implementations.",
-  },
+      "Studying Computer Science and Engineering at ASTU.",
+  }
 ]
 
 export function Experience() {

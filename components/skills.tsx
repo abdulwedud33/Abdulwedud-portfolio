@@ -8,15 +8,15 @@ import { useRef } from "react"
 const skillCategories = [
   {
     title: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux"],
+    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux", "shadcn-ui"],
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Express", "PostgreSQL", "MongoDB", "Prisma", "GraphQL"],
+    skills: ["Node.js", "Express", "PostgreSQL", "MongoDB", "Prisma", "Python"],
   },
   {
     title: "Tools & Others",
-    skills: ["Git", "Docker", "AWS", "Vercel", "Figma", "Jest"],
+    skills: ["Git", "Docker", "MySQL", "Postman", "render", "Vercel", "Figma", "GitHub"],
   },
 ]
 

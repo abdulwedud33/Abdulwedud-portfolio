@@ -10,12 +10,12 @@ const highlights = [
   {
     icon: Award,
     title: "Experience",
-    description: "5+ years building web applications",
+    description: "2+ years building web applications",
   },
   {
     icon: BookOpen,
     title: "Education",
-    description: "Computer Science degree",
+    description: "Studying Computer Science and Engineering at ASTU",
   },
   {
     icon: Heart,
@@ -53,7 +53,7 @@ export function About() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full blur-2xl opacity-20" />
               <img
-                src="/professional-developer-portrait.png"
+                src="/proffessional web developer portrait.jpeg"
                 alt="Profile"
                 className="relative rounded-full w-64 h-64 sm:w-80 sm:h-80 object-cover border-4 border-border"
               />
@@ -67,7 +67,7 @@ export function About() {
             className="space-y-6"
           >
             <p className="text-lg leading-relaxed text-muted-foreground">
-              I'm a passionate Full Stack Developer with over 5 years of experience in building modern web applications.
+              I'm a passionate Full Stack Web Developer with over 2 years of experience in building modern web applications.
               I specialize in React, Next.js, and Node.js, creating scalable and performant solutions that solve
               real-world problems.
             </p>

@@ -38,7 +38,7 @@ export function Hero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-balance">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold sm:mb-8 mb-4 text-balance">
               Hi, I'm <span className="gradient-text">Abdulwedud Yassin</span>
               <br />
               <span className="text-4xl sm:text-5xl lg:text-6xl">a Full Stack Web Developer</span>
@@ -82,19 +82,19 @@ export function Hero() {
             className="flex items-center justify-center gap-4"
           >
             <Button variant="ghost" size="icon" className="rounded-full" asChild>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/abdulwedud33" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </a>
             </Button>
             <Button variant="ghost" size="icon" className="rounded-full" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/abdulwedud3" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </a>
             </Button>
             <Button variant="ghost" size="icon" className="rounded-full" asChild>
-              <a href="mailto:your.email@example.com">
+              <a href="mailto:abdulwedudyassin2@gmail.com">
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
               </a>

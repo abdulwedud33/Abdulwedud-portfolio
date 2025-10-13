@@ -11,19 +11,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "your.email@example.com",
-    href: "mailto:your.email@example.com",
+    value: "abdulwedudyassin2@gmail.com",
+    href: "mailto:abdulwedudyassin2@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "+251 901523366",
+    href: "tel:+251 901523366",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "San Francisco, CA",
+    value: "Ethiopia, Adama City",
     href: "#",
   },
 ]
@@ -78,7 +78,7 @@ export function Contact() {
                   I'm currently available for freelance work and full-time opportunities.
                 </p>
                 <Button size="lg" className="rounded-full" asChild>
-                  <a href="mailto:your.email@example.com">
+                  <a href="mailto:abdulwedudyassin2@gmail.com">
                     <Mail className="mr-2 h-5 w-5" />
                     Send me an email
                   </a>

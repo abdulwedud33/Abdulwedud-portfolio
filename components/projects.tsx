@@ -9,38 +9,38 @@ import { useRef } from "react"
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "E-Commerce Landing Page",
     description:
-      "A full-featured e-commerce platform with payment integration, admin dashboard, and real-time inventory management.",
-    image: "/modern-ecommerce-dashboard.png",
-    tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+      "A full-featured e-commerce landing page with a modern design and smooth animations.",
+    image: "/e-commerce landing page.png",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+    github: "https://github.com/abdulwedud33/nike-landing-page",
+    demo: "https://nike-landing-page-ashy-five.vercel.app",
   },
   {
-    title: "Task Management App",
-    description:
-      "Collaborative task management application with real-time updates, team workspaces, and advanced filtering.",
-    image: "/task-management-app.png",
-    tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-    github: "https://github.com",
-    demo: "https://demo.com",
-  },
-  {
-    title: "AI Content Generator",
-    description: "AI-powered content generation tool using OpenAI API with custom templates and export functionality.",
-    image: "/ai-content-generator-interface.png",
-    tags: ["Next.js", "OpenAI", "Tailwind", "Prisma"],
-    github: "https://github.com",
-    demo: "https://demo.com",
-  },
-  {
-    title: "Social Media Dashboard",
+    title: "Intern Finder App",
     description: "Analytics dashboard for social media management with data visualization and scheduling features.",
-    image: "/social-media-analytics-dashboard.png",
-    tags: ["React", "D3.js", "Express", "Redis"],
-    github: "https://github.com",
-    demo: "https://demo.com",
+    image: "/intern finder app.png",
+    tags: ["React", "TypeScript", "Tailwind", "shadcn-ui", "Node.js", "Express", "MongoDB"],
+    github: "https://github.com/abdulwedud33/intern-finder-v2",
+    demo: "https://intern-finder-alpha.vercel.app",
+  },
+  {
+    title: "Weather App",
+    description: "AI-powered content generation tool using OpenAI API with custom templates and export functionality.",
+    image: "/weather app.png",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind", "Weather API"],
+    github: "https://github.com/abdulwedud33/weather-app",
+    demo: "https://weather-app-cyan-ten-40.vercel.app",
+  },
+  {
+    title: "Task Management App with google authentication",
+    description:
+      "Collaborative task management application with real-time updates and advanced filtering with google authentication.",
+    image: "/task management app.png",
+    tags: ["React", "Node.js", "Tailwind", "PostgreSQL"],
+    github: "https://github.com/abdulwedud33/Advanced-todo",
+    demo: "https://advanced-todo-sable.vercel.app",
   },
 ]
 
