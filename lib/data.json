@@ -1,0 +1,85 @@
+{
+  "personal": {
+    "name": "Abdulwedud",
+    "title": "Full Stack Developer",
+    "tagline": "I build modern web applications using React, Next.js, and Node.js",
+    "email": "your.email@example.com",
+    "phone": "+1 (555) 123-4567",
+    "location": "San Francisco, CA",
+    "github": "https://github.com",
+    "linkedin": "https://linkedin.com",
+    "twitter": "https://twitter.com"
+  },
+  "about": {
+    "bio": "I'm a passionate Full Stack Developer with over 5 years of experience in building modern web applications. I specialize in React, Next.js, and Node.js, creating scalable and performant solutions that solve real-world problems.",
+    "highlights": [
+      {
+        "title": "Experience",
+        "description": "5+ years building web applications"
+      },
+      {
+        "title": "Education",
+        "description": "Computer Science degree"
+      },
+      {
+        "title": "Passion",
+        "description": "Creating delightful user experiences"
+      }
+    ]
+  },
+  "skills": {
+    "frontend": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux"],
+    "backend": ["Node.js", "Express", "PostgreSQL", "MongoDB", "Prisma", "GraphQL"],
+    "tools": ["Git", "Docker", "AWS", "Vercel", "Figma", "Jest"]
+  },
+  "projects": [
+    {
+      "title": "E-Commerce Platform",
+      "description": "A full-featured e-commerce platform with payment integration, admin dashboard, and real-time inventory management.",
+      "tags": ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
+      "github": "https://github.com",
+      "demo": "https://demo.com"
+    },
+    {
+      "title": "Task Management App",
+      "description": "Collaborative task management application with real-time updates, team workspaces, and advanced filtering.",
+      "tags": ["React", "Node.js", "Socket.io", "MongoDB"],
+      "github": "https://github.com",
+      "demo": "https://demo.com"
+    },
+    {
+      "title": "AI Content Generator",
+      "description": "AI-powered content generation tool using OpenAI API with custom templates and export functionality.",
+      "tags": ["Next.js", "OpenAI", "Tailwind", "Prisma"],
+      "github": "https://github.com",
+      "demo": "https://demo.com"
+    },
+    {
+      "title": "Social Media Dashboard",
+      "description": "Analytics dashboard for social media management with data visualization and scheduling features.",
+      "tags": ["React", "D3.js", "Express", "Redis"],
+      "github": "https://github.com",
+      "demo": "https://demo.com"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Tech Innovations Inc.",
+      "role": "Senior Full Stack Developer",
+      "period": "2022 - Present",
+      "description": "Leading development of enterprise web applications using Next.js and Node.js. Mentoring junior developers and implementing best practices."
+    },
+    {
+      "company": "Digital Solutions Co.",
+      "role": "Full Stack Developer",
+      "period": "2020 - 2022",
+      "description": "Built and maintained multiple client projects using React and Express. Improved application performance by 40% through optimization."
+    },
+    {
+      "company": "StartUp Labs",
+      "role": "Frontend Developer",
+      "period": "2019 - 2020",
+      "description": "Developed responsive web applications and collaborated with designers to create pixel-perfect implementations."
+    }
+  ]
+}
