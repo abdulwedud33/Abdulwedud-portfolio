@@ -1,25 +1,25 @@
 {
   "personal": {
     "name": "Abdulwedud",
-    "title": "Full Stack Developer",
+    "title": "Full Stack Web Developer",
     "tagline": "I build modern web applications using React, Next.js, and Node.js",
-    "email": "your.email@example.com",
-    "phone": "+1 (555) 123-4567",
-    "location": "San Francisco, CA",
-    "github": "https://github.com",
-    "linkedin": "https://linkedin.com",
-    "twitter": "https://twitter.com"
+    "email": "abdulwedudyassin2@gmail.com",
+    "phone": "+251 901523366",
+    "location": "Ethiopia, Adama City",
+    "github": "https://github.com/abdulwedud33",
+    "linkedin": "https://linkedin.com/in/abdulwedud3",
+    "twitter": "https://twitter.com/abdulwedud33"
   },
   "about": {
     "bio": "I'm a passionate Full Stack Developer with over 5 years of experience in building modern web applications. I specialize in React, Next.js, and Node.js, creating scalable and performant solutions that solve real-world problems.",
     "highlights": [
       {
         "title": "Experience",
-        "description": "5+ years building web applications"
+        "description": "2+ years building web applications"
       },
       {
         "title": "Education",
-        "description": "Computer Science degree"
+        "description": "Studying Computer Science and Engineering at Adama Science and Technology University"
       },
       {
         "title": "Passion",
@@ -29,8 +29,8 @@
   },
   "skills": {
     "frontend": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux"],
-    "backend": ["Node.js", "Express", "PostgreSQL", "MongoDB", "Prisma", "GraphQL"],
-    "tools": ["Git", "Docker", "AWS", "Vercel", "Figma", "Jest"]
+    "backend": ["Node.js", "Express", "PostgreSQL", "MongoDB", "Prisma", "Python"],
+    "tools": ["Git", "Docker", "MySQL", "Vercel", "Figma", "GitHub"]
   },
   "projects": [
     {

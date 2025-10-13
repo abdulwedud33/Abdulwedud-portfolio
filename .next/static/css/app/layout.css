@@ -349,9 +349,6 @@ font-weight: 100 900;
   .bottom-1\/4 {
     bottom: calc(1/4 * 100%);
   }
-  .bottom-8 {
-    bottom: calc(var(--spacing) * 8);
-  }
   .-left-12 {
     left: calc(var(--spacing) * -12);
   }

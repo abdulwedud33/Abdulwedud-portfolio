@@ -23,18 +23,13 @@ const navItems = [
 ]
 
 export function Navbar() {
-  const [scrolled, setScrolled] = useState(false)
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
+  const [openMobile, setOpenMobile] = useState(false)
   const isMobile = useIsMobile()
 
   useEffect(() => {
     setMounted(true)
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
   if (!mounted) return null
@@ -44,7 +39,7 @@ export function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "glass shadow-lg" : ""}`}
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -73,7 +68,7 @@ export function Navbar() {
           {/* Desktop/Mobile Theme Toggle */}
           <div className="flex items-center gap-4">
             <Button
-              variant="ghost"
+              variant="outline"
               size="icon"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               className="rounded-full"
@@ -84,9 +79,9 @@ export function Navbar() {
 
             {/* Mobile Menu */}
             {isMobile && (
-              <Sheet>
+              <Sheet open={openMobile} onOpenChange={setOpenMobile}>
                 <SheetTrigger asChild>
-                  <Button variant="ghost" size="icon" className="md:hidden">
+                  <Button variant="outline" size="icon" className="md:hidden">
                     <Menu className="h-6 w-6" />
                     <span className="sr-only">Open menu</span>
                   </Button>
@@ -102,21 +97,22 @@ export function Navbar() {
                       <motion.a
                         key={item.name}
                         href={item.href}
-                        className="text-lg font-medium text-muted-foreground hover:text-foreground transition-colors py-2 border-b border-border/50"
+                        className="text-lg flex justify-center items-center font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: index * 0.1 }}
                         whileHover={{ x: 10 }}
+                        onClick={() => setOpenMobile(false)}
                       >
                         {item.name}
                       </motion.a>
                     ))}
                   </nav>
                   <div className="mt-8 pt-8 border-t border-border">
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground">Theme</span>
+                    <div className="flex items-center justify-center gap-2">
+                      <span className="text-md text-muted-foreground">Theme</span>
                       <Button
-                        variant="ghost"
+                        variant="outline"
                         size="icon"
                         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                         className="rounded-full"
