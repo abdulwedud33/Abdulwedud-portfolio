@@ -8,26 +8,25 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Yes - Full Stack Developer Portfolio",
+  title: "Abdulwedud Portfolio",
   description:
     "Full Stack Developer specializing in React, Next.js, and Node.js. Building modern web applications with cutting-edge technologies.",
   keywords: ["Full Stack Developer", "React", "Next.js", "Node.js", "Web Development", "Portfolio"],
-  authors: [{ name: "Yes" }],
-  creator: "Yes",
+  authors: [{ name: "Abdulwedud" }],
+  creator: "Abdulwedud",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://yourwebsite.com",
-    title: "Yes - Full Stack Developer",
+    title: "Abdulwedud - Full Stack Developer",
     description: "Full Stack Developer building modern web applications",
-    siteName: "Yes Portfolio",
+    siteName: "Abdulwedud Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Yes - Full Stack Developer",
+    title: "Abdulwedud - Full Stack Developer",
     description: "Full Stack Developer building modern web applications",
   },
-    generator: 'v0.app'
 }
 
 export default function RootLayout({
