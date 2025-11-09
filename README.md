@@ -34,16 +34,16 @@ Welcome to my personal portfolio website! This is a modern, responsive, and inte
 2. **Install dependencies
    bash
    npm install
-   # or
+    or
    yarn install
-   # or
+    or
    pnpm install
 3. **Run the development server
    bash
    npm run dev
-   # or
+    or
    yarn dev
-   # or
+    or
    pnpm dev
 4. **Open https://abdulwedud-portfolio.vercel.app in your browser
   📝 Customization
