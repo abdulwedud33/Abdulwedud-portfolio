@@ -45,7 +45,7 @@ Welcome to my personal portfolio website! This is a modern, responsive, and inte
    yarn dev
    # or
    pnpm dev
-4. **Open http://localhost:3000 in your browser
+4. **Open https://abdulwedud-portfolio.vercel.app in your browser
   📝 Customization
    Update your personal information in the respective component files
    Modify the color scheme in tailwind.config.js
