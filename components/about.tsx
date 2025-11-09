@@ -84,7 +84,7 @@ export function About() {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/40 to-cyan-500/40 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <img
-                src="/professional-web-developer.png"
+                src="/proffessional web developer portrait.jpeg"
                 alt="Abdulwedud Yassin - Full Stack Web Developer"
                 className="relative rounded-3xl w-80 h-80 sm:w-96 sm:h-96 object-cover border-2 border-blue-500/30 shadow-2xl"
               />
