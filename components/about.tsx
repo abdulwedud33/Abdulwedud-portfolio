@@ -54,7 +54,7 @@ export function About() {
   }
 
   return (
-    <section id="about" className="py-12 sm:py-24 relative" ref={ref}>
+    <section id="about" className="py-8 sm:py-18 relative" ref={ref}>
       {/* Background decoration */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/2 right-0 w-96 h-96 bg-gradient-to-tl from-blue-500/10 to-transparent rounded-full blur-3xl" />
