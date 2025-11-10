@@ -54,7 +54,7 @@ export function About() {
   }
 
   return (
-    <section id="about" className="py-20 sm:py-32 relative" ref={ref}>
+    <section id="about" className="py-12 sm:py-24 relative" ref={ref}>
       {/* Background decoration */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/2 right-0 w-96 h-96 bg-gradient-to-tl from-blue-500/10 to-transparent rounded-full blur-3xl" />
@@ -79,7 +79,7 @@ export function About() {
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="flex justify-center order-2 lg:order-1"
+            className="flex justify-center order-1 lg:order-1"
           >
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/40 to-cyan-500/40 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -96,16 +96,16 @@ export function About() {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="space-y-8 order-1 lg:order-2"
+            className="space-y-8 order-2 lg:order-2"
           >
             <div className="space-y-5">
-              <h3 className="text-2xl sm:text-3xl font-bold text-foreground">Who I Am</h3>
-              <p className="text-lg leading-relaxed text-muted-foreground">
+              <h3 className="text-2xl sm:text-3xl text-center font-bold text-foreground">Who I Am</h3>
+              <p className="text-lg text-center leading-relaxed text-muted-foreground">
                 I'm a passionate Full Stack Web Developer with over 2 years of experience in building modern web
                 applications. I specialize in React, Next.js, and Node.js, creating scalable and performant solutions
                 that solve real-world problems.
               </p>
-              <p className="text-lg leading-relaxed text-muted-foreground">
+              <p className="text-lg text-center leading-relaxed text-muted-foreground">
                 When I'm not coding, you can find me contributing to open-source projects, writing technical articles,
                 or exploring new technologies. I believe in continuous learning and staying up-to-date with the latest
                 industry trends.
