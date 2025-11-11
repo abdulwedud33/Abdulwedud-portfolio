@@ -100,12 +100,12 @@ export function About() {
           >
             <div className="space-y-5">
               <h3 className="text-2xl sm:text-3xl text-center font-bold text-foreground">Who I Am</h3>
-              <p className="text-lg text-center leading-relaxed text-muted-foreground">
+              <p className="text-lg leading-relaxed text-muted-foreground">
                 I'm a passionate Full Stack Web Developer with over 2 years of experience in building modern web
                 applications. I specialize in React, Next.js, and Node.js, creating scalable and performant solutions
                 that solve real-world problems.
               </p>
-              <p className="text-lg text-center leading-relaxed text-muted-foreground">
+              <p className="text-lg leading-relaxed text-muted-foreground">
                 When I'm not coding, you can find me contributing to open-source projects, writing technical articles,
                 or exploring new technologies. I believe in continuous learning and staying up-to-date with the latest
                 industry trends.
