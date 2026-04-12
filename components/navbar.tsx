@@ -6,6 +6,7 @@ import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { useIsMobile } from "@/components/ui/use-mobile"
+import Link from "next/link";
 import {
   Sheet,
   SheetContent,
