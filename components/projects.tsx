@@ -26,6 +26,14 @@ const projects = [
     demo: "https://intern-finder-alpha.vercel.app",
   },
   {
+      title: "FTVTI Self-Test Exit Examination System",
+      description: "A modern web-based self-test platform for Federal Technical and Vocational Training Institute (FTVTI) students. Allows students to practice multiple-choice exit exams by year with instant right/wrong feedback, real-time results, and admin management.",
+      image:"/ftvti-self-test.png",
+      tags: ["Next.js", "TypeScript", "Express.js", "Prisma", "PostgreSQL", "Tailwind CSS", "shadcn/ui"],
+      github: "https://github.com/abdulwedud33/ftvti-self-test.git",
+      demo: "https://ftvti-self-test.vercel.app"
+  },
+  {
     title: "Weather App",
     description: "AI-powered content generation tool using OpenAI API with custom templates and export functionality.",
     image: "/weather app.png",
