@@ -155,28 +155,6 @@ export function About() {
               ))}
             </motion.div>
 
-            {/* Skills Section (kept and enhanced for future UI use) */}
-            <motion.div
-              variants={fadeUp}
-              initial="hidden"
-              animate={isInView ? "visible" : "hidden"}
-              transition={{ delay: 0.3 }}
-              className="pt-6"
-            >
-              <div className="grid sm:grid-cols-3 gap-6">
-                {skills.map((skill) => (
-                  <div key={skill.category} className="text-center space-y-2">
-                    <h4 className="font-semibold text-lg text-foreground">
-                      {skill.category}
-                    </h4>
-                    <p className="text-sm text-muted-foreground">
-                      {skill.tech.join(" • ")}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-
           </motion.div>
         </div>
       </div>
