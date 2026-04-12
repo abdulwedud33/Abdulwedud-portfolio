@@ -73,7 +73,7 @@ export function About() {
         </motion.div>
 
         {/* Main Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-24">
+        <div className="flex items-center max-w-6xl mx-auto mb-14">
           {/* Image Section */}
           
 
