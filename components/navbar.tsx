@@ -44,11 +44,14 @@ export function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           
-              <img
-                src="/proffessional web developer portrait.jpeg"
-                alt="Abdulwedud Yassin - Full Stack Web Developer"
-                className="w-10 h-10 rounded-xl"
-              />
+
+        <Link href="/">
+           <img
+              src="/proffessional web developer portrait.jpeg"
+              alt="Abdulwedud Yassin - Full Stack Web Developer"
+              className="w-10 h-10 rounded-xl cursor-pointer"
+            />
+         </Link>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
