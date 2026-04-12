@@ -47,7 +47,7 @@ export function Navbar() {
               <img
                 src="/proffessional web developer portrait.jpeg"
                 alt="Abdulwedud Yassin - Full Stack Web Developer"
-                className="w-15 h-15"
+                className="w-15 h-15 rounded-xl"
               />
           
           {/* Desktop Navigation */}
