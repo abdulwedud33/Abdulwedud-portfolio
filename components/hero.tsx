@@ -122,7 +122,7 @@ const containerVariants: Variants = {
               className="rounded-full bg-transparent font-semibold px-8 hover:bg-blue-500/5"
               asChild
             >
-              <a href="/cv.pdf" download className="flex items-center gap-2">
+              <a href="/Abdulwedud-cv.pdf" download className="flex items-center gap-2">
                 <Download className="w-4 h-4" />
                 Download CV
               </a>
