@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Moon, Sun, Menu } from "lucide-react"
+import { Moon, Sun, Menu, ArrowUpRight } from "lucide-react"
 import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
@@ -40,27 +40,22 @@ export function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+      className="fixed top-0 left-0 right-0 z-50 px-4 pt-4 sm:px-6"
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          
-
-        <Link href="/">
-           <img
-              src="/proffessional web developer portrait.jpeg"
-              alt="Abdulwedud Yassin - Full Stack Web Developer"
-              className="w-10 h-10 rounded-xl cursor-pointer"
-            />
-         </Link>
+      <div className="mx-auto max-w-6xl">
+        <div className="flex items-center justify-between rounded-full border border-border/80 bg-background/85 px-4 py-2.5 shadow-sm backdrop-blur-md">
+        <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight">
+          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-sm text-primary-foreground">A</span>
+          <span className="hidden sm:inline">Abdulwedud<span className="text-primary">.</span></span>
+        </Link>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-7">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                className="text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground transition-colors hover:text-foreground"
               >
                 {item.name}
               </a>
@@ -68,18 +63,21 @@ export function Navbar() {
           </div>
 
           {/* Desktop/Mobile Theme Toggle */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
             <Button
               variant="outline"
               size="icon"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="rounded-full"
+              className="h-9 w-9 rounded-full"
             >
               {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
               <span className="sr-only">Toggle theme</span>
             </Button>
 
             {/* Mobile Menu */}
+            <Button className="hidden rounded-full bg-accent text-accent-foreground hover:bg-accent/90 md:inline-flex" size="sm" asChild>
+              <a href="#contact">Let's talk <ArrowUpRight className="ml-1 h-4 w-4" /></a>
+            </Button>
             {isMobile && (
               <Sheet open={openMobile} onOpenChange={setOpenMobile}>
                 <SheetTrigger asChild>
@@ -90,16 +88,14 @@ export function Navbar() {
                 </SheetTrigger>
                 <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                   <SheetHeader>
-                    <SheetTitle className="text-left text-2xl font-bold gradient-text">
-                      AY
-                    </SheetTitle>
+                    <SheetTitle className="text-left text-2xl font-bold">Abdulwedud<span className="text-primary">.</span></SheetTitle>
                   </SheetHeader>
                   <nav className="flex flex-col gap-4 mt-8">
                     {navItems.map((item, index) => (
                       <motion.a
                         key={item.name}
                         href={item.href}
-                        className="text-lg flex justify-center items-center font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
+                        className="flex items-center justify-center py-2 text-lg font-medium text-muted-foreground transition-colors hover:text-foreground"
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: index * 0.1 }}
