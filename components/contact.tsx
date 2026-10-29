@@ -78,7 +78,7 @@ export function Contact() {
           >
             <Card className="glass border-primary/30 bg-primary p-8 text-primary-foreground">
               <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
-                <p className="max-w-md text-xl font-medium leading-relaxed">
+                <p className="max-w-md text-xl font-medium leading-relaxed text-black dark:text-white">
                   Let’s talk about what you’re building.
                 </p>
                 <Button size="lg" className="rounded-full bg-accent text-accent-foreground hover:bg-accent/90" asChild>
