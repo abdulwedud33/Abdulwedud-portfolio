@@ -28,24 +28,25 @@ export function Experience() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="experience" className="py-20 sm:py-32 bg-muted/30" ref={ref}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="experience" className="border-y border-border bg-muted/35 py-24 sm:py-32" ref={ref}>
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="mb-14 grid gap-6 text-left sm:grid-cols-[0.3fr_1fr]"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Work Experience</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            My professional journey and career highlights
-          </p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">04 / Experience</p>
+          <div>
+            <h2 className="text-3xl font-semibold tracking-tight sm:text-5xl">Where I’ve been learning by doing.</h2>
+            <p className="mt-4 max-w-xl text-base text-muted-foreground">A short timeline of the environments shaping how I build.</p>
+          </div>
         </motion.div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl">
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-border hidden md:block" />
+            <div className="absolute bottom-0 left-3 top-0 hidden w-px bg-border md:block" />
 
             <div className="space-y-8">
               {experiences.map((exp, index) => (
@@ -57,13 +58,13 @@ export function Experience() {
                   className="relative"
                 >
                   <div className="flex items-start gap-6">
-                    <div className="hidden md:flex items-center justify-center w-16 h-16 rounded-full bg-primary text-primary-foreground shrink-0 relative z-10">
-                      <Briefcase className="h-6 w-6" />
+                    <div className="relative z-10 mt-6 hidden h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent text-accent-foreground md:flex">
+                      <span className="h-2 w-2 rounded-full bg-current" />
                     </div>
-                    <Card className="flex-1 glass p-6">
+                    <Card className="glass flex-1 border-border p-6">
                       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-2">
-                        <h3 className="text-xl font-bold">{exp.role}</h3>
-                        <span className="text-sm text-muted-foreground font-mono">{exp.period}</span>
+                        <h3 className="text-xl font-semibold">{exp.role}</h3>
+                        <span className="font-mono text-xs text-muted-foreground">{exp.period}</span>
                       </div>
                       <p className="text-primary font-semibold mb-3">{exp.company}</p>
                       <p className="text-muted-foreground leading-relaxed">{exp.description}</p>

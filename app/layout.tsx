@@ -8,9 +8,9 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Abdulwedud Portfolio",
+  title: "Abdulwedud — Full Stack Developer",
   description:
-    "Full Stack Developer specializing in React, Next.js, and Node.js. Building modern web applications with cutting-edge technologies.",
+    "Abdulwedud is a full stack developer building thoughtful web products with React, Next.js, and Node.js.",
   keywords: ["Full Stack Developer", "React", "Next.js", "Node.js", "Web Development", "Portfolio"],
   authors: [{ name: "Abdulwedud" }],
   creator: "Abdulwedud",

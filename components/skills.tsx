@@ -25,21 +25,22 @@ export function Skills() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="skills" className="py-14 sm:py-24 bg-muted/30" ref={ref}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="skills" className="border-y border-border bg-muted/35 py-24 sm:py-32" ref={ref}>
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="mb-14 grid gap-6 text-left sm:grid-cols-[0.3fr_1fr]"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Skills & Technologies</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Technologies and tools I work with to bring ideas to life
-          </p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">02 / Toolkit</p>
+          <div>
+            <h2 className="text-3xl font-semibold tracking-tight sm:text-5xl">The tools behind the work.</h2>
+            <p className="mt-4 max-w-xl text-base text-muted-foreground">A focused stack for shipping polished interfaces and reliable full-stack products.</p>
+          </div>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid gap-4 md:grid-cols-3">
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.title}
@@ -47,8 +48,8 @@ export function Skills() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
             >
-              <Card className="p-6 glass h-full">
-                <h3 className="text-xl font-bold mb-6 gradient-text">{category.title}</h3>
+              <Card className="glass h-full border-border p-6">
+                <h3 className="mb-6 text-xl font-semibold">{category.title}</h3>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
                     <motion.span
@@ -56,7 +57,7 @@ export function Skills() {
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                       transition={{ duration: 0.3, delay: categoryIndex * 0.1 + skillIndex * 0.05 }}
-                      className="px-4 py-2 bg-secondary text-secondary-foreground rounded-full text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors cursor-default"
+                      className="cursor-default rounded-full border border-border bg-background/50 px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:border-primary hover:text-foreground"
                     >
                       {skill}
                     </motion.span>

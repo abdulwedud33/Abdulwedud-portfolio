@@ -1,7 +1,7 @@
 "use client"
 
 import { Card } from "@/components/ui/card"
-import { Award, BookOpen, Code, Heart, Zap } from "lucide-react"
+import { Award, BookOpen, Heart } from "lucide-react"
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 
@@ -68,7 +68,7 @@ export function About() {
     <section
       id="about"
       ref={ref}
-      className="py-12 sm:py-20 relative overflow-hidden"
+      className="relative overflow-hidden py-24 sm:py-32"
       aria-label="About section"
     >
       {/* Background decoration */}
@@ -77,22 +77,21 @@ export function About() {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <motion.div
           variants={fadeUp}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16 sm:mb-20"
+          className="mb-14 grid gap-6 border-t border-border pt-5 text-left sm:grid-cols-[0.3fr_1fr]"
         >
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-balance tracking-tight">
-            About Me
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">01 / About</p>
+          <h2 className="max-w-3xl text-3xl font-semibold leading-tight tracking-tight sm:text-5xl">
+            A practical builder with a soft spot for details.
           </h2>
-          <div className="w-24 h-1.5 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto rounded-full" />
         </motion.div>
 
         {/* Main Content Grid */}
-        <div className="flex items-center justify-center max-w-6xl mx-auto mb-14">
+        <div className="mx-auto mb-14 max-w-6xl">
           {/* Image Section (reserved for future use) */}
 
           {/* Content Section */}
@@ -101,31 +100,20 @@ export function About() {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-10 order-2 lg:order-2 w-full"
+            className="grid gap-12 lg:grid-cols-[1fr_0.85fr]"
           >
-            <div className="flex justify-center">
-              <div className="space-y-6 max-w-2xl text-center px-4">
-                <h3 className="text-2xl sm:text-3xl font-bold text-foreground">
-                  Who I Am
-                </h3>
-
-                <p className="text-lg leading-relaxed text-muted-foreground">
-                  I'm a passionate Full Stack Web Developer with over 2 years of experience in building modern web
-                  applications. I specialize in React, Next.js, and Node.js, creating scalable and performant solutions
-                  that solve real-world problems.
-                </p>
-
-                <p className="text-lg leading-relaxed text-muted-foreground">
-                  When I'm not coding, you can find me contributing to open-source projects, writing technical articles,
-                  or exploring new technologies. I believe in continuous learning and staying up-to-date with the latest
-                  industry trends.
-                </p>
-              </div>
+            <div className="space-y-6">
+            <p className="text-xl leading-relaxed text-foreground sm:text-2xl">
+              I’m a Full Stack Web Developer with 2+ years of experience turning useful ideas into modern web applications.
+            </p>
+            <p className="max-w-xl text-base leading-relaxed text-muted-foreground">
+              My work sits between product thinking and implementation: clear interfaces, dependable systems, and an eye for the small choices that make software feel considered.
+            </p>
             </div>
 
             {/* Highlights Grid */}
             <motion.div
-              className="grid sm:grid-cols-3 gap-5"
+              className="grid gap-4 sm:grid-cols-3"
               variants={containerVariants}
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
@@ -136,10 +124,10 @@ export function About() {
                   variants={itemVariants}
                   whileHover={{ y: -5 }}
                 >
-                  <Card className="p-6 text-center border border-blue-500/20 hover:border-blue-500/60 hover:bg-blue-50/5 transition-all duration-300 backdrop-blur group cursor-default hover:shadow-xl hover:shadow-blue-500/10">
+                  <Card className="group cursor-default border-border bg-transparent p-5 transition-colors hover:border-primary/50">
                     <div className="flex justify-center mb-4">
-                      <div className="p-3 rounded-xl bg-gradient-to-br from-blue-500/20 to-cyan-500/20 group-hover:scale-125 group-hover:rotate-3 transition-transform duration-300">
-                        <highlight.icon className="w-6 h-6 text-blue-400" />
+                      <div className="rounded-full bg-accent p-3 text-accent-foreground transition-transform duration-300 group-hover:rotate-6">
+                        <highlight.icon className="h-5 w-5" />
                       </div>
                     </div>
 

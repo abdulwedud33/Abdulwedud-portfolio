@@ -12,9 +12,9 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-muted/30">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="flex flex-col items-center gap-6">
+    <footer className="border-t border-border">
+      <div className="mx-auto max-w-6xl px-6 py-10 lg:px-8">
+        <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-center">
           <div className="flex items-center gap-4">
             {socialLinks.map((link) => (
               <Button key={link.label} variant="ghost" size="icon" className="rounded-full" asChild>
@@ -25,8 +25,8 @@ export function Footer() {
               </Button>
             ))}
           </div>
-          <p className="text-sm text-muted-foreground text-center">
-            © {new Date().getFullYear()} Yes. All rights reserved.
+          <p className="text-sm text-muted-foreground">
+            © {new Date().getFullYear()} Abdulwedud Yassin. Built with care.
           </p>
         </div>
       </div>

@@ -2,7 +2,7 @@
 
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Mail, MapPin, Phone } from "lucide-react"
+import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react"
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
@@ -24,7 +24,7 @@ const contactInfo = [
     icon: MapPin,
     label: "Location",
     value: "Ethiopia, Adama City",
-    href: "#",
+    href: "https://maps.google.com/?q=Adama,Ethiopia",
   },
 ]
 
@@ -33,22 +33,23 @@ export function Contact() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="contact" className="py-20 sm:py-32" ref={ref}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-24 sm:py-32" ref={ref}>
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="mb-14 grid gap-6 text-left sm:grid-cols-[0.3fr_1fr]"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Get In Touch</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Have a project in mind or want to collaborate? Let's talk!
-          </p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">05 / Contact</p>
+          <div>
+            <h2 className="text-3xl font-semibold tracking-tight sm:text-5xl">Have a good idea? Let’s make it real.</h2>
+            <p className="mt-4 max-w-xl text-base text-muted-foreground">The quickest way to reach me is email. I’m open to thoughtful collaborations, freelance work, and full-time opportunities.</p>
+          </div>
         </motion.div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+        <div className="max-w-5xl">
+          <div className="mb-10 grid gap-4 md:grid-cols-3">
             {contactInfo.map((info, index) => (
               <motion.a
                 key={info.label}
@@ -58,10 +59,13 @@ export function Contact() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ y: -4 }}
               >
-                <Card className="p-6 text-center glass hover:shadow-lg transition-shadow h-full">
-                  <info.icon className="h-8 w-8 mx-auto mb-4 text-primary" />
-                  <h3 className="font-semibold mb-2">{info.label}</h3>
-                  <p className="text-sm text-muted-foreground">{info.value}</p>
+                <Card className="glass h-full border-border p-5 transition-colors hover:border-primary/50">
+                  <div className="mb-8 flex items-center justify-between">
+                    <info.icon className="h-5 w-5 text-primary" />
+                    <ArrowUpRight className="h-4 w-4 text-muted-foreground" />
+                  </div>
+                  <h3 className="mb-2 font-semibold">{info.label}</h3>
+                  <p className="break-words text-sm text-muted-foreground">{info.value}</p>
                 </Card>
               </motion.a>
             ))}
@@ -72,15 +76,14 @@ export function Contact() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <Card className="p-8 glass">
-              <div className="text-center space-y-6">
-                <p className="text-lg text-muted-foreground">
-                  I'm currently available for freelance work and full-time opportunities.
+            <Card className="glass border-primary/30 bg-primary p-8 text-primary-foreground">
+              <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
+                <p className="max-w-md text-xl font-medium leading-relaxed">
+                  Let’s talk about what you’re building.
                 </p>
-                <Button size="lg" className="rounded-full" asChild>
+                <Button size="lg" className="rounded-full bg-accent text-accent-foreground hover:bg-accent/90" asChild>
                   <a href="mailto:abdulwedudyassin2@gmail.com">
-                    <Mail className="mr-2 h-5 w-5" />
-                    Send me an email
+                    <Mail className="mr-2 h-5 w-5" /> Send me an email
                   </a>
                 </Button>
               </div>
